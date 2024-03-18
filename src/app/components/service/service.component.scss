@@ -1,0 +1,65 @@
+@use '../../../scss/var';
+@use '../../../scss/mixin' as mx;
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+    padding: 3.5rem 1rem 2.35rem 1rem;
+    text-align: center;
+    background: var.$lightGrayishBlue;
+    &__title {
+        @include mx.font(2.1rem, 300);
+    }
+    &__desc {
+        margin-top: 1rem;
+    }
+    &__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        @include mx.dimension(auto, 994px);
+        margin-top: 4rem;
+        &-item {
+            height: 25%;
+            font-weight: 400;
+            h3 {
+                margin-top: 1.8rem;
+                @include mx.font(1.5rem, 400);
+            }
+            p {
+                margin-top: 1.25rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .service {
+        align-items: start;
+        margin-top: 0;
+        padding: 6rem 7.5%;
+        text-align: left;
+        &__title {
+            @include mx.font(2.4rem, 300);
+        }
+        &__desc {
+            @include mx.dimension(50%);
+            margin-top: 1.5rem;
+            @include mx.font(1.125rem, 400);
+        }
+        &__section {
+            flex-direction: row;
+            justify-content: center;
+            @include mx.dimension();
+            margin-top: 6rem;
+            &-item {
+                p {
+                    @include mx.dimension(89%);
+                }
+            }
+        }
+    }
+}

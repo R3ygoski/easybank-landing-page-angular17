@@ -1,0 +1,15 @@
+@use '../../../scss/var';
+@use '../../../scss/mixin' as mx;
+
+button {
+    padding: 0.8em 1.35em;
+    border-radius: 2em;
+    @include mx.font(1.05rem, 700);
+    background: linear-gradient(135deg, var.$limeGreen 0%, var.$brightCyan 100%);
+    color: var.$white;
+    transition: .4s;
+    cursor: pointer;
+    &:hover {
+        filter: saturate(.6) brightness(1.2);
+    }
+}

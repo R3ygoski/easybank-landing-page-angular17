@@ -1,0 +1,105 @@
+@use '../../../scss/var';
+@use '../../../scss/mixin' as mx;
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @include mx.dimension(100%);
+    &__logo {
+        margin-left: 1.2em;
+    }
+    &__list-container {
+        position: absolute;
+        top: 44px;
+        @include mx.dimension(100%, 600px);
+        background: linear-gradient(180deg, var.$darkBlue 0%, #fff0 100%);
+        .nav__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            right: 24px;
+            @include mx.dimension(_, 266px);
+            padding: 1em 0;
+            border-radius: .4rem;
+            @include mx.font(1.1rem, 700);
+            background: var.$white;
+            &-item {
+                display: flex;
+                a {
+                    text-decoration: none;
+                    color: var.$darkBlue;
+                }
+            }
+        }
+    }
+    &__cta {
+        margin-right: 1.2em;
+        app-button {
+            display: none;
+        }
+        img {
+            display: block;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .nav {
+        &__logo {
+            margin-left: .25rem;
+        }
+        &__list-container {
+            position: static;
+            height: 64px;
+            background: transparent;
+            .nav__list {
+                flex-direction: row;
+                justify-content: center;
+                position: static;
+                width: 670px;
+                height: 64px;
+                padding-left: 1.35em;
+                gap: 1.6em;
+                @include mx.font(1rem, 400);
+                &-item {
+                    align-items: center;
+                    position: static;
+                    height: 80px;
+                    border-bottom: 3px solid transparent;
+                    &:hover {
+                        border-bottom: 3px solid;
+                        border-image: linear-gradient(90deg,var.$limeGreen,var.$brightCyan) 10;
+                        color: var.$darkBlue;
+                    }
+                    a {
+                        color: var.$grayishBlue;
+                        &:hover {
+                            color: var.$darkBlue;
+                        }
+                    }
+                }
+            }
+        }
+        &__cta {
+            width: 20%;
+            app-button {
+                display: block;
+            }
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+// Generic
+.hidden{
+    display: none;
+}

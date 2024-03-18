@@ -1,0 +1,29 @@
+<nav class="nav">
+    <div class="nav__logo">
+       <img src="./assets/logo.svg" alt="Easybank Logo"> 
+    </div>
+    @if (isVisible || isDesktop) {
+    <div class="nav__list-container">
+        <ul class="nav__list">
+            <li class="nav__list-item"><a href="#">Home</a></li>
+            <li class="nav__list-item"><a href="#">About</a></li>
+            <li class="nav__list-item"><a href="#">Contact</a></li>
+            <li class="nav__list-item"><a href="#">Blog</a></li>
+            <li class="nav__list-item"><a href="#">Careers</a></li>
+        </ul>
+    </div>
+    }
+    @else {
+    <div class="hidden">
+    </div>
+    }
+    <div class="nav__cta">
+        <app-button/>
+        @if (isVisible) {
+            <img (click)="menuToggle()" src="./assets/icon-close.svg" alt="Hamburguer Menu Icon"/>
+        }
+        @else {
+            <img (click)="menuToggle()" src="./assets/icon-hamburger.svg" alt="Hamburguer Menu Icon"/>
+        }
+    </div>
+</nav>

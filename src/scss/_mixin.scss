@@ -1,0 +1,9 @@
+@mixin font($ftSz, $ftWgt){
+    font-size: $ftSz;
+    font-weight: $ftWgt;
+}
+
+@mixin dimension($wd: auto, $ht: auto){
+    width: $wd;
+    height: $ht;
+}

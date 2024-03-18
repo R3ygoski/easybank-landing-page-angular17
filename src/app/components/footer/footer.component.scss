@@ -1,0 +1,62 @@
+@use '../../../scss/var';
+@use '../../../scss/mixin' as mx;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var.$darkBlue;
+    margin-top: 5rem;
+    padding-top: 2.25rem;
+    @include mx.dimension(_, 508px);
+    &__social-medias-list {
+        display: flex;
+        margin-top: 2rem;
+        gap: 1rem;
+        img {
+            width: 24px;
+        }
+    }
+    &__links-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        text-align: center;
+        gap: 1rem;
+        li a {
+            color: var.$veryLightGray;
+        }
+    }
+    &__btn {
+        margin-top: 2rem;
+    }
+    &__copyright {
+        margin-top: 1.5rem;
+        @include mx.font(0.9rem, 400);
+    }
+}
+
+@media (min-width: 1024px){
+    .footer {
+        display: flex;
+        flex-flow: column wrap;
+        @include mx.dimension(_, 182px);
+        &__links-list {
+            display: flex;
+            flex-flow: column wrap;
+            @include mx.dimension(400px, 80%);
+            margin-top: 0rem;
+            text-align: left;
+            gap: 1rem;
+            margin-right: 10rem;
+        }
+        &__btn {
+            margin-top: 0rem;
+            margin-left: 3rem;
+        }
+        &__copyright {
+            margin-top: 1.5rem;
+            @include mx.font(0.9rem, 400);
+        }
+    }
+}

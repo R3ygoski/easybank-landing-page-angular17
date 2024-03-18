@@ -1,0 +1,27 @@
+@use '../../../scss/var';
+@use '../../../scss/mixin' as mx;
+
+.header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    @include mx.dimension(100%, 64px);
+    background: var.$white;
+    
+    app-nav {
+        @include mx.dimension(100%);
+    }
+}
+
+@media (min-width: 1024px){
+    .header {
+        display: flex;
+        align-items: center;
+        position: relative;
+        @include mx.dimension(_, 80px);
+    
+        app-nav {
+            padding: 0 5em;
+        }
+    }
+}
