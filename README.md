@@ -1,27 +1,48 @@
-# EasybankLandingPageAngular
+# Frontend Mentor - Easybank landing page solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## Code scaffolding
+## Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### The challenge
 
-## Build
+Users should be able to:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-## Running unit tests
+### Links
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Live Site URL: [Github](https://your-live-site-url.com)
 
-## Running end-to-end tests
+## My process
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Built with
 
-## Further help
+- Semantic HTML5 markup
+- Flexbox
+- SCSS custom properties
+- SCSS Mixins
+- Mobile-first workflow
+- [Angular 17](https://angular.dev/) - JS Framework
+- [SASS](https://sass-lang.com/) - CSS Preprocessor
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### What I learned
+
+This marked my inaugural venture with the Angular Framework. While it initially posed challenges, over time, clarity dawned, making tasks more manageable and comprehensible. I thoroughly enjoyed navigating Angular 17's intricacies, and I aspire to elevate it to a primary focus, following my current exploration with NextTS.
+
+## Author
+
+- Frontend Mentor - [@R3ygoski](https://www.frontendmentor.io/profile/R3ygoski)
